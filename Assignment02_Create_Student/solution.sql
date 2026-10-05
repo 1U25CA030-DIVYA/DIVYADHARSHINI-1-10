@@ -1,4 +1,8 @@
-create database divya;
-use divya;
-create table student (studentID int (5),studentname varchar(20), DOB date,gender varchar (10), departmentID int (5));
-desc student;
+USE CollegeDB;
+CREATE TABLE Student(
+StudentID INT(5) PRIMARY KEY ,
+StudentName VARCHAR(20) NOT NULL,
+DOB DATE UNIQUE,
+Gender VARCHAR(10) NOT NULL,
+DepartmentID INT(5));
+DESC Student;
